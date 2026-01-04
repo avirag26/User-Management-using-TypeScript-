@@ -1,0 +1,76 @@
+<div class="wrapper">
+  <div class="title-text">
+    <div class="title login">Login Form</div>
+    <div class="title signup">Signup Form</div>
+  </div>
+  <div class="form-container">
+    <div class="slide-controls">
+      <input type="radio" name="slide" id="login" checked />
+      <input type="radio" name="slide" id="signup" />
+      <label for="login" class="slide login">Login</label>
+      <label for="signup" class="slide signup">Signup</label>
+      <div class="slider-tab"></div>
+    </div>
+    <div class="form-inner">
+      <form action="/user/login" method="post" class="login">
+        <div class="field">
+          <input
+            class="email_input"
+            type="text"
+            placeholder="Email Address"
+            name="email"
+            required
+          />
+        </div>
+        <div class="field">
+          <input
+            class="password_input"
+            type="password"
+            placeholder="Password"
+            name="password"
+            required
+          />
+        </div>
+        <div class="field btn">
+          <div class="btn-layer"></div>
+          <input type="submit" value="Login" />
+        </div>
+        <div class="signup-link">Not a member? <a href="">Signup now</a></div>
+        <p class="error-login"></p>
+      </form>
+      <form action="/user/register" class="signup" method="post">
+        <div class="field">
+          <input
+            type="text"
+            class="email_signup"
+            placeholder="Email Address"
+            name="email"
+            required
+          />
+        </div>
+        <div class="field">
+          <input
+            type="password"
+            class="password_signup"
+            placeholder="Password"
+            name="password"
+            required
+          />
+        </div>
+        <div class="field">
+          <input
+            type="password"
+            class="confirm_password"
+            placeholder="Confirm password"
+            required
+          />
+        </div>
+        <div class="field btn">
+          <div class="btn-layer"></div>
+          <input type="submit" value="Signup" />
+        </div>
+        <p class="error-mssge"></p>
+      </form>
+    </div>
+  </div>
+</div>

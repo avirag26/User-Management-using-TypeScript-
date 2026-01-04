@@ -1,0 +1,44 @@
+<div class="login">
+  <div class="login-screen">
+    <div class="app-title">
+      <h1>Login</h1>
+    </div>
+
+    <form action="/admin/login" method="post" class="login-form">
+      <div class="control-group">
+        <input
+          type="text"
+          class="login-field"
+          value=""
+          placeholder="email"
+          id="login-name"
+          name="email"
+          required
+        />
+        <label class="login-field-icon fui-user" for="login-name"></label>
+      </div>
+
+      <div class="control-group">
+        <input
+          type="password"
+          class="login-field"
+          value=""
+          placeholder="password"
+          id="login-pass"
+          name="password"
+          required
+        />
+        <label class="login-field-icon fui-lock" for="login-pass"></label>
+      </div>
+
+      <button
+        type="submit"
+        class="btn btn-primary btn-large btn-block"
+        href="#"
+      >
+        login
+      </button>
+    </form>
+    <p class="error-mssge text-center"></p>
+  </div>
+</div>
